@@ -1,6 +1,4 @@
-/* @media screen and (max-width: 54rem){ */
 /* common parts */
-
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -64,19 +62,7 @@ header {
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  font-size: 8%;
   padding-left: 2%;
-}
-
-
-/* bundesliga logo */
-#bliga {
-  width: 50%;
-}
-/* Sky-perfect img */
-#skyperfect {
-  /* width: 20%; */
-  padding: 2%;
 }
 
 /* <div class="header_right_wrapper"> */
@@ -109,12 +95,12 @@ header {
   display: none;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(255, 255, 255);
   width: 100%;
   padding: 1%;
   position: absolute;
-  top: 1%;
+  top: -1%;
   left: 0%;
+  /* background-color: rgba(255, 255, 255); */
 }
 
 
@@ -126,8 +112,12 @@ header {
   align-items: center;
   width: 100%;
 }
+.hr_upper span {
+  background-color: white;
+  margin: 0 0 0 0.5rem;
+}
 .hr_upper img {
-  width: 60%;
+  width: 10%;
 }
 
 .hr_upper button{
@@ -138,13 +128,24 @@ header {
   height: 3rem;
   width: 3rem;
 }
-
+/* <div class="hr_upper_head"> */
+.hr_upper_head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 5rem;
+  background-color: rgb(255, 255, 255);
+  padding: 0 0 0 5rem;
+}
 /* <div class="hr_middle"> */
 .hr_middle {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* <div class="hr_left"> */
@@ -380,7 +381,8 @@ main {
 }
 
 .ad img {
-  width: 80%;
+  /* width: 80%; */
+  height: 5rem;
   padding-bottom: 2%;
 }
 /* <div class="topic"> */
@@ -491,6 +493,8 @@ main {
 }
 #lk span {
   background-color: rgb(225, 0, 0);
+  color: rgb(255, 255, 255);
+
 }
 
 #hh img {
@@ -499,6 +503,8 @@ main {
 
 #hh span {
   background-color: rgb(31, 94, 166);
+  color: rgb(255, 255, 255);
+
 }
 
 
@@ -508,6 +514,8 @@ main {
 
 #wb span {
   background-color: rgb(100,180,45);
+  color: rgb(255, 255, 255);
+
 }
 
 #fb img {
@@ -515,6 +523,8 @@ main {
 }
 #fb span {
   background-color: rgb(228,0,43);
+  color: rgb(255, 255, 255);
+
 }
 
 
@@ -529,6 +539,8 @@ main {
 }
 #berlin span {
   background-color: rgb(0,105,180);
+  color: rgb(255, 255, 255);
+
 }
 
 #unionb img{
@@ -538,6 +550,8 @@ main {
 
 #unionb span {
   background-color: rgb(227,6,19);
+  color: rgb(255, 255, 255);
+
 }
 
 
@@ -546,6 +560,8 @@ main {
 }
 #s04 span {
   background-color: rgb(0,75,156);
+  color: rgb(255, 255, 255);
+
 }
 
 #m05 img{
@@ -553,6 +569,8 @@ main {
 }
 #m05 span {
   background-color: rgb(227,6,19);
+  color: rgb(255, 255, 255);
+
 }
 
 #koln img {
@@ -561,6 +579,8 @@ main {
 
 #koln span {
   background-color: rgb(225,0,0);
+  color: rgb(255, 255, 255);
+
 }
 
 #agb img {
@@ -569,6 +589,8 @@ main {
 
 #agb span{
   background-color: rgb(205,23,25);
+  color: rgb(255, 255, 255);
+
 }
 
 #bremen img {
@@ -577,6 +599,8 @@ main {
 
 #bremen span {
   background-color:rgb(0,150,85);
+  color: rgb(255, 255, 255);
+
 }
 
 #stg img{
@@ -607,6 +631,9 @@ main {
 }
 
 /* <div class="most_shared"> */
+.most_shared img {
+  width: 9rem;
+}
 .most_shared a {
   display: flex;
   flex-direction: row;
@@ -623,6 +650,9 @@ main {
 }
 
 /* <div class="most_watched"> */
+.most_watched img {
+  width: 9rem;
+}
 .most_watched a {
   display: flex;
   flex-direction: row;
@@ -654,6 +684,7 @@ main {
 
 .news_and_stories li {
   width: 48%;
+  height: 17rem;
   margin: 1%;
 
 }
@@ -663,6 +694,9 @@ main {
   flex-direction: column;
 }
 
+.news_and_stories img {
+  height: 12rem;
+}
 .news_and_stories button {
   margin-bottom: 2%;
   width: 100%;
@@ -747,13 +781,14 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   text-align: center;
   color: rgb(146,147,146);
   background-color: rgb(43,48,54);
+  height: 5rem;
 }
 /* <div class="fb_left"> */
 /* <div class="fb_right"> */
 .fb_right select {
   margin-left: 1rem;
 }
-/* } */
