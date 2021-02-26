@@ -65,6 +65,10 @@ header {
   padding-left: 2%;
 }
 
+.header_left img {
+  width: 5rem;
+}
+
 /* <div class="header_right_wrapper"> */
 .header_right_wrapper {
   display: flex;
@@ -294,32 +298,7 @@ main {
   margin: 0rem 0.5rem;
   width: 3rem;
 }
-/* <button id="ar_left"> */
-#ar_left {
-  position: absolute;
-  left: 4.9rem;
-  top: 4.5rem;
-  height: 3rem;
-  background-color: rgba(177, 177, 177, 0.8);
-  border: none;
-}
 
-#ar_left i {
-  width: 1rem;
-}
-/* <button id="ar_right"> */
-#ar_right {
-  position: absolute;
-  right: 4.8rem;
-  top: 4.5rem;
-  height: 3rem;
-  background-color: rgba(177, 177, 177, 0.8);
-  border: none;
-}
-
-#ar_right i {
-  width: 1rem;
-}
 /* <div class="date"> */
 .date {
   display: flex;
@@ -368,6 +347,7 @@ main {
   background-color: rgb(200, 10, 0);
   color: rgb(255, 255, 255);
   width: 20%;
+  padding: 0 1rem;
 }
 #watch_now:hover {
   background-color: rgb(154,3,31);
@@ -380,11 +360,20 @@ main {
   color: rgb(146,147,146);
 }
 
-.ad img {
-  /* width: 80%; */
+/* <div class="ad_img_wrappers"> */
+.ad_img_wrappers {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ad_img_wrappers img {
   height: 5rem;
   padding-bottom: 2%;
 }
+
 /* <div class="topic"> */
 .topic {
   margin: 2% 0%;
@@ -669,7 +658,8 @@ main {
 /* <div class="news_and_stories"> */
 .news_and_stories {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   /* justify-content: center; */
 }
 
@@ -677,14 +667,13 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   list-style: none;
   width: 100%;
 }
 
 .news_and_stories li {
-  width: 48%;
-  height: 17rem;
+  height: 15rem;
   margin: 1%;
 
 }
@@ -695,7 +684,8 @@ main {
 }
 
 .news_and_stories img {
-  height: 12rem;
+  height: 10rem;
+  width: 20rem;
 }
 .news_and_stories button {
   margin-bottom: 2%;
