@@ -1,0 +1,759 @@
+/* @media screen and (max-width: 54rem){ */
+/* common parts */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  background-color: rgb(229,229,229);
+}
+
+h2 {
+  margin: 2% 0%;
+}
+
+article h1,
+article p {
+  padding: 0% 2% 1% 2%;
+}
+
+article a {
+  color: rgb(146,147,146);
+  padding: 2%;
+  text-align: left;
+}
+
+a {
+  color: rgb(43,21,89);
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+/* <html lang="en"> */
+/* <body> */
+/* <header> */
+header {
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  /* margin: 0 10%; */
+  background-color: rgb(255, 255, 255);
+}
+/* <div class="header_wrapper"> */
+.header_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  padding: 0 10%;
+}
+
+/* <div class="header_left"> */
+.header_left {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+
+.header_left span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 8%;
+  padding-left: 2%;
+}
+
+
+/* bundesliga logo */
+#bliga {
+  width: 50%;
+}
+/* Sky-perfect img */
+#skyperfect {
+  /* width: 20%; */
+  padding: 2%;
+}
+
+/* <div class="header_right_wrapper"> */
+.header_right_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 10%;
+}
+/* <div class="header_right"> */
+.hamburger_btn {
+  display: flex;
+  flex-direction: row;
+  /* width: 10%; */
+}
+
+.hamburger_btn button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(200,10,0);
+  width: 100%;
+  border: none;
+}
+
+.hamburger_btn i {
+  font-size: 2rem;
+}
+
+/* <div id="header_right"> */
+#header_right {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 1%;
+  position: absolute;
+  top: 1%;
+  left: 0%;
+}
+
+
+/* <div class="hr_upper"> */
+.hr_upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.hr_upper img {
+  width: 60%;
+}
+
+.hr_upper button{
+  /* display: none; */
+  color: rgb(200,10,0);
+  background-color: transparent;
+  border: none;
+  height: 3rem;
+  width: 3rem;
+}
+
+/* <div class="hr_middle"> */
+.hr_middle {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* <div class="hr_left"> */
+/* <div class="hr_right"> */
+.hr_left ul, .hr_right ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 20rem;
+}
+
+/* <div class="hr_left"> */
+.hr_left a{
+  color: rgb(177,177,177);
+}
+
+.hr_left li:first-child {
+  background-color: rgb(67,70,80);
+}
+
+.hr_left li:first-child a {
+  text-decoration: underline;
+}
+
+.hr_left li {
+  border-bottom: solid 1px rgb(35,40,46);
+  background-color: rgb(43,48,57);
+  padding: 0.5rem 1rem;
+}
+
+.hr_left li:hover {
+  text-decoration: underline;
+  background-color: rgb(31, 34, 41);
+}
+/* <div class="hr_right"> */
+.hr_right a {
+  color: rgb(255,255,255);
+}
+
+.hr_right li:first-child {
+  background-color: rgb(167,11,0);
+}
+
+.hr_right li {
+  border-bottom: solid 1px rgb(167,11,0);
+  background-color: rgb(200,10,0);
+  padding: 0.5rem 1rem;
+}
+
+.hr_right li:hover {
+  background-color: rgb(167,11,0);
+}
+/* <div class="hr_bottom"> */
+.hr_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* <div class="hrb_btn_wrapper"> */
+.hrb_btn_wrapper {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.hrb_btn_wrapper a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgb(177,177,177);
+  border: solid 2px rgb(177,177,177);
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  margin: 0.2rem;
+  width: 20rem;
+  height: 2rem;
+}
+
+.hrb_btn_wrapper a:hover {
+  text-decoration: underline;
+}
+/* <main> */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(229,229,229);
+  color: rgb(43,21,89);
+}
+/* <div class="container"> */
+.container {
+  width: 80%;
+}
+/* <div class="about_match"> */
+.about_match {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* <div class="next_match"> */
+.next_match {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* <div class="versus"> */
+.versus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.versus ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  /* width: 100%; */
+}
+
+.versus li {
+  list-style: none;
+  background-color: rgb(255, 255, 255);
+  margin: 0 0.1rem;
+
+}
+
+.versus span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.versus img{
+  margin: 0rem 0.5rem;
+  width: 3rem;
+}
+/* <button id="ar_left"> */
+#ar_left {
+  position: absolute;
+  left: 4.9rem;
+  top: 4.5rem;
+  height: 3rem;
+  background-color: rgba(177, 177, 177, 0.8);
+  border: none;
+}
+
+#ar_left i {
+  width: 1rem;
+}
+/* <button id="ar_right"> */
+#ar_right {
+  position: absolute;
+  right: 4.8rem;
+  top: 4.5rem;
+  height: 3rem;
+  background-color: rgba(177, 177, 177, 0.8);
+  border: none;
+}
+
+#ar_right i {
+  width: 1rem;
+}
+/* <div class="date"> */
+.date {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  margin: 1%;
+}
+.date span{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+/* <div class="highlight"> */
+.highlight {
+  width: 100%;
+}
+
+.highlight a {
+  display: flex;
+  width: 100%;
+}
+
+.highlight span{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+#matchday {
+  padding-left: 2rem;
+  width: 80%;
+}
+
+#matchday:hover {
+  background-color: rgb(241, 241, 241);
+}
+#watch_now {
+  text-align: center;
+  background-color: rgb(200, 10, 0);
+  color: rgb(255, 255, 255);
+  width: 20%;
+}
+#watch_now:hover {
+  background-color: rgb(154,3,31);
+}
+/* <div class="ad"> */
+.ad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(146,147,146);
+}
+
+.ad img {
+  width: 80%;
+  padding-bottom: 2%;
+}
+/* <div class="topic"> */
+.topic {
+  margin: 2% 0%;
+}
+.topic article {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+}
+
+.topic article img {
+  width: 100%;
+}
+
+
+
+/* <div class="official_partners"> */
+.official_partners {
+  background-color: rgb(255, 255, 255);
+  margin: 2% 0%;
+}
+/*  <div class="op_upper"> */
+.op_upper {
+  padding: 0% 2%;
+}
+/* <div class="op_bottom"> */
+.op_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2%;
+}
+.op_bottom img {
+  width: 10%;
+}
+/* <div class="clubs"> */
+/* <div id="club"> */
+#club {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#club span {
+  font-size: 20%;
+}
+/* <div class="scroll_club_logo"> */
+/* <div class="club_cards"> */
+.club_cards {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+/* .club_cards::-webkit-scrollbar {
+  display:none;
+} */
+/* <div class="club_card"> */
+.club_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.club_card span{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 8rem;
+  height: 2rem;
+}
+
+.club_card img {
+  width: 8rem;
+}
+/* <div class="club_logo_wrapper"> */
+#bayern img {
+  background-color: rgb(154,3,31);
+}
+#bayern span{
+  background-color: rgb(220, 5, 4);
+  color: rgb(255, 255, 255);
+}
+#bvb img {
+  background-color: rgb(178,161,0);
+}
+
+#bvb span {
+  background-color: rgb(255,230,0);
+}
+
+
+#leipzig img {
+  background-color: rgb(178,178,178);
+}
+
+#mgb span, #mgb img {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+#lk img {
+  background-color: rgb(157, 0, 0);
+}
+#lk span {
+  background-color: rgb(225, 0, 0);
+}
+
+#hh img {
+  background-color: rgb(22, 66, 116);
+}
+
+#hh span {
+  background-color: rgb(31, 94, 166);
+}
+
+
+#wb img {
+  background-color: rgb(70,126,31);
+}
+
+#wb span {
+  background-color: rgb(100,180,45);
+}
+
+#fb img {
+  background-color: rgb(159,0,30);
+}
+#fb span {
+  background-color: rgb(228,0,43);
+}
+
+
+
+#ff span, #ff img {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+#berlin img {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 73, 126);
+}
+#berlin span {
+  background-color: rgb(0,105,180);
+}
+
+#unionb img{
+  background-color: rgb(158,4,13);
+}
+
+
+#unionb span {
+  background-color: rgb(227,6,19);
+}
+
+
+#s04 img {
+  background-color: rgb(0,52,109);
+}
+#s04 span {
+  background-color: rgb(0,75,156);
+}
+
+#m05 img{
+  background-color: rgb(158,4,13);
+}
+#m05 span {
+  background-color: rgb(227,6,19);
+}
+
+#koln img {
+  background-color: rgb(157,0,0);
+}
+
+#koln span {
+  background-color: rgb(225,0,0);
+}
+
+#agb img {
+  background-color: rgb(143,16,17);
+}
+
+#agb span{
+  background-color: rgb(205,23,25);
+}
+
+#bremen img {
+  background-color: rgb(0,105,59);
+}
+
+#bremen span {
+  background-color:rgb(0,150,85);
+}
+
+#stg img{
+  background-color: rgb(178,178,178);
+}
+
+#bfeld span, #bfeld img{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+
+/* <div class="main_articles"> */ 
+.main_articles article {
+  background-color: rgb(255, 255, 255);
+  margin-top: 1%;
+}
+
+.main_articles article img {
+  width: 100%;
+}
+/* <div class="most_shared"> */
+/* <div class="most_watched"> */
+.most_shared ul,
+.most_watched ul {
+  list-style: none;
+  width: 100%;
+}
+
+/* <div class="most_shared"> */
+.most_shared a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 2%;
+  color: rgb(35,40,46);
+  border-bottom: solid 1px rgb(204,204,204);
+}
+
+.most_shared li{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+/* <div class="most_watched"> */
+.most_watched a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 2%;
+  color: rgb(255, 255, 255);
+  border-bottom: solid 1px rgb(35,40,46);
+}
+
+.most_watched li{
+  background-color: rgb(55, 75, 85);
+}
+/* <div class="news_and_stories"> */
+.news_and_stories {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
+.news_and_stories ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+}
+
+.news_and_stories li {
+  width: 48%;
+  margin: 1%;
+
+}
+
+.news_and_stories article {
+  display: flex;
+  flex-direction: column;
+}
+
+.news_and_stories button {
+  margin-bottom: 2%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: rgb(200, 10, 0);
+  font-weight: bold;
+  padding: 2%;
+}
+/* <div class="nh_articles"> */
+.nh{
+  background-color: rgb(255, 255, 255);
+}
+
+/* <div class="highlighted> */
+.hgt {
+  background-color: rgb(55,75,85);
+}
+.hgt a{
+  color: rgb(255, 255, 255);
+}
+/* <footer> */
+footer {
+  width: 100%;
+}
+/* <div class="footer_uppper"> */   
+.footer_upper {
+  background-color: rgb(255, 255, 255);
+  margin: 2% 0%;
+  padding: 0% 2%;
+  border-bottom: solid 1px rgb(204,204,204);
+}
+
+/*  <div class="fu_logos"> */
+.fu_logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2%;
+}
+
+.fu_logos img {
+  width: 10%;
+} 
+/* <div class="footer_middle"> */
+.footer_middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#footer_middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 1%;
+}
+
+#footer_middle ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#footer_middle li {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+}
+
+#footer_middle a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* width: 28rem; */
+}
+#footer_middle span:hover{
+  color: rgb(146,147,146);
+  text-decoration: underline;
+}
+/* <div class="footer_bottom"> */
+.footer_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  color: rgb(146,147,146);
+  background-color: rgb(43,48,54);
+}
+/* <div class="fb_left"> */
+/* <div class="fb_right"> */
+.fb_right select {
+  margin-left: 1rem;
+}
+/* } */
