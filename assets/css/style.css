@@ -726,12 +726,13 @@ footer {
 .fu_logos {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-center;
   padding: 2%;
 }
 
 .fu_logos img {
-  width: 10%;
+  width: 20%;
+  height: 5%;
 } 
 /* <div class="footer_middle"> */
 .footer_middle {
