@@ -115,6 +115,7 @@ header {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  background-color: rgb(255, 255, 255);
 }
 .hr_upper span {
   background-color: white;
@@ -139,7 +140,6 @@ header {
   align-items: center;
   justify-content: space-around;
   height: 5rem;
-  background-color: rgb(255, 255, 255);
   padding: 0 0 0 5rem;
 }
 /* <div class="hr_middle"> */
@@ -149,7 +149,7 @@ header {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255, 0.9);
 }
 
 /* <div class="hr_left"> */
@@ -209,6 +209,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+
 }
 
 /* <div class="hrb_btn_wrapper"> */
