@@ -404,10 +404,10 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 2%;
+  background-color: aqua;
 }
 .op_bottom img {
-  width: 10%;
+  width: 2rem;
 }
 /* <div class="clubs"> */
 /* <div id="club"> */
