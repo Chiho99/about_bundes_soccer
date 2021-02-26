@@ -403,8 +403,9 @@ main {
 .op_bottom {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .op_bottom img {
   width: 2rem;
