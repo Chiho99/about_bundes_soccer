@@ -693,6 +693,7 @@ main {
   height: 10rem;
   width: 20rem;
 }
+
 .news_and_stories button {
   margin-bottom: 2%;
   width: 100%;
@@ -707,11 +708,16 @@ main {
   background-color: rgb(255, 255, 255);
 }
 
+.nh a{
+  width: 20rem;
+}
 /* <div class="highlighted> */
 .hgt {
   background-color: rgb(55,75,85);
 }
+
 .hgt a{
+  width: 20rem;
   color: rgb(255, 255, 255);
 }
 /* <footer> */
